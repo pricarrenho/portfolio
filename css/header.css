@@ -3,7 +3,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px;
+  padding: 40px 16px;
   margin: 0 auto;
 }
 
@@ -11,12 +11,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 38px;
+  gap: 8px;
   padding: 16px;
 }
 
 .header-menu a {
-  color: #000;
+  color: #141414;
   text-decoration: none;
   font-size: 16px;
   display: block;
@@ -28,7 +28,7 @@
   .header {
     flex-direction: column;
     gap: 40px;
-    padding: 20px;
+    padding: 16px;
   }
 
   .header-menu a {

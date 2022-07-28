@@ -9,10 +9,11 @@
 }
 
 .experiencia-title {
-  max-width: 260px;
+  max-width: 5ch;
+  line-height: 144px;
   text-transform: uppercase;
-  font-size: 100px;
-  color: #c4c1c1;
+  font-size: 96px;
+  color: #e0e0e0;
   word-wrap: break-word;
 }
 
@@ -31,9 +32,93 @@
 .experiencia-card {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
+  gap: 16px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  position: relative;
 }
 
 .experiencia-text {
   font-size: 24px;
+  max-width: 50ch;
+  color: #525252;
+}
+
+.experiencia-text strong {
+  color: #141414;
+}
+
+.experiencia-itens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-content: start;
+}
+
+.experiencia-itens li {
+  background-color: #ffffff;
+  padding: 8px;
+  line-height: 8px;
+  border-radius: 4px;
+}
+
+.experiencia-card h3 {
+  margin-bottom: 8px;
+}
+
+.experiencia-card p,
+li {
+  font-size: 16px;
+  color: #525252;
+}
+
+.year {
+  position: absolute;
+  left: -96px;
+  top: 16px;
+  width: 80px;
+  height: 20px;
+  line-height: 20px;
+  text-align: right;
+  padding-right: 16px;
+  font-size: 14px;
+}
+
+.experiencia-card::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#92cf21, #67dd0a);
+  position: absolute;
+  top: 14px;
+  left: -4px;
+}
+
+@media (max-width: 800px) {
+  .experiencia {
+    grid-template-columns: 1fr;
+    gap: 0px;
+  }
+
+  .year {
+    position: initial;
+    order: 1;
+    width: initial;
+    text-align: left;
+  }
+
+  .experiencia h2 {
+    text-transform: none;
+    font-size: 48px;
+    color: #141414;
+    text-align: left;
+  }
+}
+
+@media (max-width: 400px) {
+  .experiencia-card {
+    grid-template-columns: 1fr;
+  }
 }
