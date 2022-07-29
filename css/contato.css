@@ -1,0 +1,41 @@
+.contato {
+  background-color: #000000;
+}
+
+.contato-container {
+  max-width: 1200px;
+  padding: 120px 20px 60px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: center;
+}
+
+.contato-text {
+  font-size: 24px;
+  line-height: 24px;
+  color: #cccccc;
+}
+
+.contato-list li {
+  font-size: 40px;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.contato-footer {
+  font-size: 18px;
+  color: #8f8f8f;
+}
+
+@media (max-width: 800px) {
+  .contato-container {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .contato-list li {
+    font-size: 26px;
+  }
+}
